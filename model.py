@@ -68,7 +68,11 @@ class TextCNN:
             num_total_filters = Config.model.num_filters * len(Config.model.filter_sizes)
             self.h_pool = tf.concat(pooled_outputs, 3)
             self.h_pool_flat = tf.reshape(self.h_pool, [-1, num_total_filters])
-            self.h_dropout = tf.layers.dropout(self.h_pool_flat, Config.model.dropout)
+
+            if self.mode == tf.estimator.ModeKeys.TRAIN:
+                self.h_dropout = tf.layers.dropout(self.h_pool_flat, Config.model.dropout)
+            else:
+                self.h_dropout = tf.layers.dropout(self.h_pool_flat, 0)
 
     def _build_conv_maxpool(self):
         pooled_outputs = []
