@@ -30,7 +30,10 @@ class TextCNN:
                 mode=mode,
                 predictions=self.train_pred,
                 loss=self.loss,
-                train_op=self.train_op
+                train_op=self.train_op,
+                eval_metric_ops={
+                    "accuracy": tf.metrics.accuracy(tf.argmax(self.targets, axis=1), self.predictions)
+                }
             )
 
     def _init_placeholder(self, features, labels):
@@ -105,6 +108,7 @@ class TextCNN:
                 scope="loss")
 
         self.train_pred = tf.argmax(self.output[0], name='train/pred_0')
+        self.predictions = tf.argmax(self.output, axis=1)
 
     def _build_optimizer(self):
         self.train_op = layers.optimize_loss(
