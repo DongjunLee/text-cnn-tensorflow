@@ -1,0 +1,25 @@
+data:
+  base_path: 'data/'
+  processed_path: 'tiny_processed_data'
+  max_seq_length: 30
+  num_classes: 2
+  PAD_ID: 0
+
+model:
+  embed_dim: 32
+  num_filters: 16
+  filter_sizes:
+    - 2
+    - 3
+    - 4
+  dropout: 0.5
+
+train:
+  batch_size: 1
+  learning_rate: 0.001
+  train_steps: 10000
+  model_dir: 'logs/check_tiny'
+  save_every: 1000
+  loss_hook_n_iter: 1
+  check_hook_n_iter: 10
+  min_eval_frequency: 10
