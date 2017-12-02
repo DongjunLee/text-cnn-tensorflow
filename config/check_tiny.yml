@@ -1,6 +1,7 @@
 data:
   base_path: 'data/'
   processed_path: 'tiny_processed_data'
+  testset_size: 2
   num_classes: 2
   PAD_ID: 0
 
@@ -18,7 +19,6 @@ train:
   learning_rate: 0.001
   train_steps: 10000
   model_dir: 'logs/check_tiny'
-  save_every: 1000
-  loss_hook_n_iter: 1
+  save_checkpoints_steps: 1000
   check_hook_n_iter: 10
   min_eval_frequency: 10

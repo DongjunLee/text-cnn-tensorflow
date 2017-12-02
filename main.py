@@ -14,7 +14,8 @@ def main(mode):
     params = tf.contrib.training.HParams(**Config.model.to_dict())
 
     run_config = tf.contrib.learn.RunConfig(
-            model_dir=Config.train.model_dir)
+            model_dir=Config.train.model_dir,
+            save_checkpoints_steps=Config.train.save_checkpoints_steps)
 
     tf.contrib.learn.learn_runner.run(
         experiment_fn=experiment.experiment_fn,
