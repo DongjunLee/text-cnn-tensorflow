@@ -19,11 +19,16 @@ This code implements [Convolutional Neural Networks for Sentence Classification]
 	- [Estimator](https://www.tensorflow.org/api_docs/python/tf/estimator/Estimator)
 	- [Experiment](https://www.tensorflow.org/api_docs/python/tf/contrib/learn/Experiment)
 	- [Dataset](https://www.tensorflow.org/api_docs/python/tf/contrib/data/Dataset)
+- Dataset : [Sentiment Analysis on Movie Reviews](https://www.kaggle.com/c/sentiment-analysis-on-movie-reviews/data)
+
+## Todo
+
+- apply CNN-rand, CNN-static, and CNN-nonstatic models
 
 
 ## Config
 
-example: kaggle_movie_review.yml
+example: kaggle\_movie\_review.yml
 
 ```yml
 data:
@@ -70,6 +75,10 @@ python main.py --config kaggle_movie_review --mode train_and_evaluate
 ### Tensorboard
 
 ```tensorboard --logdir logs```
+
+- kaggle_movie_review
+
+![images](images/loss_and_accuracy.jpg)
 
 
 ## Reference
