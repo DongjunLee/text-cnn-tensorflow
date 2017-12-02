@@ -1,7 +1,6 @@
 data:
   base_path: 'data/'
   processed_path: 'tiny_processed_data'
-  max_seq_length: 30
   num_classes: 2
   PAD_ID: 0
 
