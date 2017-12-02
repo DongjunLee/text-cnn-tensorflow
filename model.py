@@ -60,7 +60,6 @@ class TextCNN:
             self.embedding_input = tf.nn.embedding_lookup(
                 self.embedding, self.input_data)
             self.embedding_input_expanded = tf.expand_dims(self.embedding_input, -1)
-            print(self.embedding_input_expanded)
 
     def _build_conv_layers(self):
         with tf.variable_scope("convolutions", dtype=self.dtype) as scope:
@@ -68,9 +67,7 @@ class TextCNN:
 
             num_total_filters = Config.model.num_filters * len(Config.model.filter_sizes)
             self.h_pool = tf.concat(pooled_outputs, 3)
-            print(self.h_pool)
             self.h_pool_flat = tf.reshape(self.h_pool, [-1, num_total_filters])
-            print(self.h_pool_flat)
             self.h_dropout = tf.layers.dropout(self.h_pool_flat, Config.model.dropout)
 
     def _build_conv_maxpool(self):
@@ -82,13 +79,11 @@ class TextCNN:
                         Config.model.num_filters,
                         (filter_size, Config.model.embed_dim),
                         activation=tf.nn.relu)
-                print(conv, conv.get_shape())
 
                 pool = tf.layers.max_pooling2d(
                         conv,
                         (Config.data.max_seq_length - filter_size + 1, 1),
                         (1, 1))
-                print(pool, pool.get_shape())
 
                 pooled_outputs.append(pool)
         return pooled_outputs
@@ -99,7 +94,6 @@ class TextCNN:
                            self.h_dropout,
                            Config.data.num_classes,
                            kernel_initializer=tf.contrib.layers.xavier_initializer())
-            print(self.output)
 
     def _build_loss(self):
         self.loss = tf.losses.softmax_cross_entropy(

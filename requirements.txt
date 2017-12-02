@@ -1,1 +1,2 @@
 hb-config
+tqdm

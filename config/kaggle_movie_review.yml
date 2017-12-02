@@ -1,0 +1,25 @@
+data:
+  base_path: 'data/'
+  raw_data_path: 'kaggle_movie_reviews/'
+  processed_path: 'kaggle_processed_data'
+  testset_size: 25000
+  num_classes: 5
+  PAD_ID: 0
+
+model:
+  embed_dim: 256
+  num_filters: 128
+  filter_sizes:
+    - 2
+    - 3
+    - 4
+  dropout: 0.5
+
+train:
+  batch_size: 32
+  learning_rate: 0.001
+  train_steps: 20000
+  model_dir: 'logs/kaggle_movie_review'
+  save_every: 1000
+  check_hook_n_iter: 100
+  min_eval_frequency: 100
