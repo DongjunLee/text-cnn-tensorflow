@@ -21,24 +21,22 @@ This code implements [Convolutional Neural Networks for Sentence Classification]
 	- [Dataset](https://www.tensorflow.org/api_docs/python/tf/contrib/data/Dataset)
 
 
-## Todo
-
-
 ## Config
 
-example: cornell-movie-dialogs.yml
+example: kaggle_movie_review.yml
 
 ```yml
 data:
   base_path: 'data/'
-  processed_path: 'tiny_processed_data'
-  max_seq_length: 30
-  num_classes: 2
+  raw_data_path: 'kaggle_movie_reviews/'
+  processed_path: 'kaggle_processed_data'
+  testset_size: 25000
+  num_classes: 5
   PAD_ID: 0
 
 model:
-  embed_dim: 32
-  num_filters: 16
+  embed_dim: 256
+  num_filters: 128
   filter_sizes:
     - 2
     - 3
@@ -46,14 +44,13 @@ model:
   dropout: 0.5
 
 train:
-  batch_size: 1
+  batch_size: 32
   learning_rate: 0.001
-  train_steps: 10000
-  model_dir: 'logs/check_tiny'
+  train_steps: 20000
+  model_dir: 'logs/kaggle_movie_review'
   save_every: 1000
-  loss_hook_n_iter: 1
-  check_hook_n_iter: 10
-  min_eval_frequency: 10
+  check_hook_n_iter: 100
+  min_eval_frequency: 100
 ```
 
 
@@ -63,15 +60,11 @@ Install requirements.
 
 ```pip install -r requirements.txt```
 
-First, check if the model is valid.
-
-```python main.py --config check_tiny --mode train```
-
-Then, download [Dataset]() and train it.
+Then, prepare dataset and train it.
 
 ```
-sh prepare_dataset
-python main.py --config sentiment_dataset --mode train_and_evaluate
+sh prepare_kaggle_movie_reviews.sh
+python main.py --config kaggle_movie_review --mode train_and_evaluate
 ```
 
 ### Tensorboard
