@@ -12,6 +12,7 @@ This code implements [Convolutional Neural Networks for Sentence Classification]
 - Python 3.6
 - TensorFlow 1.4
 - hb-config
+- tqdm
 
 ## Features
 
@@ -19,11 +20,15 @@ This code implements [Convolutional Neural Networks for Sentence Classification]
 	- [Estimator](https://www.tensorflow.org/api_docs/python/tf/estimator/Estimator)
 	- [Experiment](https://www.tensorflow.org/api_docs/python/tf/contrib/learn/Experiment)
 	- [Dataset](https://www.tensorflow.org/api_docs/python/tf/contrib/data/Dataset)
-- Dataset : [Sentiment Analysis on Movie Reviews](https://www.kaggle.com/c/sentiment-analysis-on-movie-reviews/data)
+- Dataset : [rt-polarity](https://github.com/yoonkim/CNN_sentence), [Sentiment Analysis on Movie Reviews](https://www.kaggle.com/c/sentiment-analysis-on-movie-reviews/data)
 
 ## Todo
 
-- apply CNN-rand, CNN-static, and CNN-nonstatic models
+- apply embed_type 
+	- CNN-rand
+	- CNN-static
+	- CNN-nonstatic
+	- CNN-multichannel
 
 
 ## Config
@@ -32,6 +37,7 @@ example: kaggle\_movie\_review.yml
 
 ```yml
 data:
+  type: 'kaggle_movie_review'
   base_path: 'data/'
   raw_data_path: 'kaggle_movie_reviews/'
   processed_path: 'kaggle_processed_data'
@@ -40,22 +46,25 @@ data:
   PAD_ID: 0
 
 model:
-  embed_dim: 256
-  num_filters: 128
+  embed_type: 'rand'  (rand, static, non-static, multichannel)
+  pretrained_embed: "" 
+  embed_dim: 300
+  num_filters: 256
   filter_sizes:
     - 2
     - 3
     - 4
+    - 5
   dropout: 0.5
 
 train:
-  batch_size: 32
-  learning_rate: 0.001
-  train_steps: 20000
+  batch_size: 64
+  learning_rate: 0.00005
+  train_steps: 100000
   model_dir: 'logs/kaggle_movie_review'
-  save_every: 1000
-  check_hook_n_iter: 100
-  min_eval_frequency: 100
+  save_checkpoints_steps: 2000
+  check_hook_n_iter: 1000
+  min_eval_frequency: 1000
 ```
 
 
@@ -76,9 +85,17 @@ python main.py --config kaggle_movie_review --mode train_and_evaluate
 
 ```tensorboard --logdir logs```
 
-- kaggle_movie_review
+- Category Color
 
-![images](images/loss_and_accuracy.jpg)
+![category_image](images/category.png)
+
+- rt-polarity (binary classification)
+
+![images](images/rt-polarity_loss_and_accuracy.jpeg)
+
+- kaggle_movie_review (multiclass classification)
+
+![images](images/kaggle-loss_and_accuracy.jpg)
 
 
 ## Reference
