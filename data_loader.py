@@ -13,40 +13,105 @@ from hbconfig import Config
 
 
 
+def clean_str(string):
+    """
+    Tokenization/string cleaning for all datasets except for SST.
+    Original taken from https://github.com/yoonkim/CNN_sentence/blob/master/process_data.py
+    """
+    string = re.sub(r"[^A-Za-z0-9(),!?\'\`]", " ", string)
+    string = re.sub(r"\'s", " \'s", string)
+    string = re.sub(r"\'ve", " \'ve", string)
+    string = re.sub(r"n\'t", " n\'t", string)
+    string = re.sub(r"\'re", " \'re", string)
+    string = re.sub(r"\'d", " \'d", string)
+    string = re.sub(r"\'ll", " \'ll", string)
+    string = re.sub(r",", " , ", string)
+    string = re.sub(r"!", " ! ", string)
+    string = re.sub(r"\(", " \( ", string)
+    string = re.sub(r"\)", " \) ", string)
+    string = re.sub(r"\?", " \? ", string)
+    string = re.sub(r"\s{2,}", " ", string)
+    return string.strip().lower()
+
+
+def load_data_and_labels(positive_data_file, negative_data_file):
+    """
+    Loads MR polarity data from files, splits the data into words and generates labels.
+    Returns split sentences and labels.
+    """
+    # Load data from files
+    positive_examples = list(open(positive_data_file, "r").readlines())
+    positive_examples = [s.strip() for s in positive_examples]
+    negative_examples = list(open(negative_data_file, "r").readlines())
+    negative_examples = [s.strip() for s in negative_examples]
+    # Split by words
+    x_text = positive_examples + negative_examples
+    x_text = [clean_str(sent) for sent in x_text]
+    # Generate labels
+    positive_labels = ['1' for _ in positive_examples]
+    negative_labels = ['0' for _ in negative_examples]
+    y = positive_labels + negative_labels
+    return x_text, y
+
+
 def prepare_raw_data():
     print('Preparing raw data into train set and test set ...')
     raw_data_path = os.path.join(Config.data.base_path, Config.data.raw_data_path)
 
-    train_path = os.path.join(raw_data_path, 'train.tsv')
-    train_reader = csv.reader(open(train_path), delimiter="\t")
+    data_type = Config.data.type
+    if data_type == "kaggle_movie_review":
+        train_path = os.path.join(raw_data_path, 'train.tsv')
+        train_reader = csv.reader(open(train_path), delimiter="\t")
 
-    prepare_dataset(list(train_reader))
+        prepare_dataset(dataset=list(train_reader))
+
+    elif data_type == "rt-polarity":
+        pos_path = os.path.join(Config.data.base_path, Config.data.raw_data_path, "rt-polarity.pos")
+        neg_path = os.path.join(Config.data.base_path, Config.data.raw_data_path, "rt-polarity.neg")
+        x_text, y = load_data_and_labels(pos_path, neg_path)
+
+        prepare_dataset(x_text=x_text, y=y)
 
 
-def prepare_dataset(dataset):
+def prepare_dataset(dataset=None, x_text=None, y=None):
     make_dir(os.path.join(Config.data.base_path, Config.data.processed_path))
-
-    print("Total data length : ", len(dataset))
-    test_ids = random.sample([i for i in range(len(dataset))], Config.data.testset_size)
 
     filenames = ['train_X', 'train_y', 'test_X', 'test_y']
     files = []
     for filename in filenames:
         files.append(open(os.path.join(Config.data.base_path, Config.data.processed_path, filename), 'wb'))
 
-    for i in tqdm(range(len(dataset))):
-        if i == 0:
-            continue
+    if dataset is not None:
 
-        data = dataset[i]
-        X, y = data[2], data[3]
+        print("Total data length : ", len(dataset))
+        test_ids = random.sample([i for i in range(len(dataset))], Config.data.testset_size)
 
-        if i in test_ids:
-            files[2].write((X + "\n").encode('utf-8'))
-            files[3].write((y + '\n').encode('utf-8'))
-        else:
-            files[0].write((X + '\n').encode('utf-8'))
-            files[1].write((y + '\n').encode('utf-8'))
+        for i in tqdm(range(len(dataset))):
+            if i == 0:
+                continue
+
+            data = dataset[i]
+            X, y = data[2], data[3]
+
+            if i in test_ids:
+                files[2].write((X + "\n").encode('utf-8'))
+                files[3].write((y + '\n').encode('utf-8'))
+            else:
+                files[0].write((X + '\n').encode('utf-8'))
+                files[1].write((y + '\n').encode('utf-8'))
+
+    else:
+
+        print("Total data length : ", len(y))
+        test_ids = random.sample([i for i in range(len(y))], Config.data.testset_size)
+
+        for i in tqdm(range(len(y))):
+            if i in test_ids:
+                files[2].write((x_text[i] + "\n").encode('utf-8'))
+                files[3].write((y[i] + '\n').encode('utf-8'))
+            else:
+                files[0].write((x_text[i] + '\n').encode('utf-8'))
+                files[1].write((y[i] + '\n').encode('utf-8'))
 
     for file in files:
         file.close()

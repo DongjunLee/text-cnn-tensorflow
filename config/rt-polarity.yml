@@ -1,0 +1,28 @@
+data:
+  type: 'rt-polarity'
+  base_path: 'data/'
+  raw_data_path: 'rt-polaritydata/'
+  processed_path: 'rt-polarity_processed_data'
+  testset_size: 1000
+  num_classes: 2
+  PAD_ID: 0
+
+model:
+  embed_type: 'rand'
+  pretrained_embed: ""
+  embed_dim: 128
+  num_filters: 128
+  filter_sizes:
+    - 3
+    - 4
+    - 5
+  dropout: 0.5
+
+train:
+  batch_size: 64
+  learning_rate: 0.0001
+  train_steps: 20000
+  model_dir: 'logs/rt-polarity'
+  save_checkpoints_steps: 1000
+  check_hook_n_iter: 100
+  min_eval_frequency: 100
