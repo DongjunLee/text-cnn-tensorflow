@@ -18,6 +18,7 @@ def clean_str(string):
     Tokenization/string cleaning for all datasets except for SST.
     Original taken from https://github.com/yoonkim/CNN_sentence/blob/master/process_data.py
     """
+    string = string.decode('utf-8')
     string = re.sub(r"[^A-Za-z0-9(),!?\'\`]", " ", string)
     string = re.sub(r"\'s", " \'s", string)
     string = re.sub(r"\'ve", " \'ve", string)
@@ -40,9 +41,9 @@ def load_data_and_labels(positive_data_file, negative_data_file):
     Returns split sentences and labels.
     """
     # Load data from files
-    positive_examples = list(open(positive_data_file, "r").readlines())
+    positive_examples = list(open(positive_data_file, "rb").readlines())
     positive_examples = [s.strip() for s in positive_examples]
-    negative_examples = list(open(negative_data_file, "r").readlines())
+    negative_examples = list(open(negative_data_file, "rb").readlines())
     negative_examples = [s.strip() for s in negative_examples]
     # Split by words
     x_text = positive_examples + negative_examples

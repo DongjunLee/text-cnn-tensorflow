@@ -3,7 +3,7 @@ data:
   base_path: 'data/'
   raw_data_path: 'rt-polaritydata/'
   processed_path: 'rt-polarity_processed_data'
-  testset_size: 1000
+  testset_size: 2000
   num_classes: 2
   PAD_ID: 0
 
@@ -20,7 +20,7 @@ model:
 
 train:
   batch_size: 64
-  learning_rate: 0.0001
+  learning_rate: 0.00001
   train_steps: 20000
   model_dir: 'logs/rt-polarity'
   save_checkpoints_steps: 1000
