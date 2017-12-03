@@ -6,6 +6,8 @@ data:
   PAD_ID: 0
 
 model:
+  embed_type: 'rand'
+  pretrained_embed: ""
   embed_dim: 32
   num_filters: 16
   filter_sizes:

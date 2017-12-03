@@ -54,8 +54,20 @@ class TextCNN:
 
     def _build_embed(self):
         with tf.variable_scope("embeddings", dtype=self.dtype) as scope:
-            self.embedding = tf.get_variable(
-                    "embedding", [Config.data.vocab_size, Config.model.embed_dim], self.dtype)
+            embed_type = Config.model.embed_type
+            if embed_type == "rand":
+                self.embedding = tf.get_variable(
+                        "embedding-rand",
+                        [Config.data.vocab_size, Config.model.embed_dim],
+                        self.dtype)
+            elif embed_type == "static":
+                raise NotImplementedError("CNN-static not implemented yet.")
+            elif embed_type == "non-static":
+                raise NotImplementedError("CNN-non-static not implemented yet.")
+            elif embed_type == "multichannel":
+                raise NotImplementedError("CNN-multichannel not implemented yet.")
+            else:
+                raise ValueError(f"Unknown embed_type {Config.model.embed_type}")
 
             self.embedding_input = tf.nn.embedding_lookup(
                 self.embedding, self.input_data)
@@ -66,13 +78,13 @@ class TextCNN:
             pooled_outputs = self._build_conv_maxpool()
 
             num_total_filters = Config.model.num_filters * len(Config.model.filter_sizes)
-            self.h_pool = tf.concat(pooled_outputs, 3)
-            self.h_pool_flat = tf.reshape(self.h_pool, [-1, num_total_filters])
+            self.concat_pooled = tf.concat(pooled_outputs, 3)
+            self.flat_pooled = tf.reshape(self.concat_pooled, [-1, num_total_filters])
 
             if self.mode == tf.estimator.ModeKeys.TRAIN:
-                self.h_dropout = tf.layers.dropout(self.h_pool_flat, Config.model.dropout)
+                self.h_dropout = tf.layers.dropout(self.flat_pooled, Config.model.dropout)
             else:
-                self.h_dropout = tf.layers.dropout(self.h_pool_flat, 0)
+                self.h_dropout = tf.layers.dropout(self.flat_pooled, 0)
 
     def _build_conv_maxpool(self):
         pooled_outputs = []
