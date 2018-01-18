@@ -8,7 +8,8 @@ data:
   PAD_ID: 0
 
 model:
-  embed_type: 'rand'
+  batch_size: 64
+  embed_type: 'rand'     #(rand, static, non-static, multichannel)
   pretrained_embed: ""
   embed_dim: 300
   num_filters: 256
@@ -20,10 +21,15 @@ model:
   dropout: 0.5
 
 train:
-  batch_size: 64
   learning_rate: 0.00005
+
   train_steps: 100000
   model_dir: 'logs/kaggle_movie_review'
-  save_checkpoints_steps: 2000
+
+  save_checkpoints_steps: 1000
+  loss_hook_n_iter: 1000
   check_hook_n_iter: 1000
   min_eval_frequency: 1000
+
+  print_verbose: True
+  debug: False

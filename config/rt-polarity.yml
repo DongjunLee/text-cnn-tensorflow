@@ -8,21 +8,28 @@ data:
   PAD_ID: 0
 
 model:
-  embed_type: 'rand'
+  batch_size: 64
+  embed_type: 'rand'     #(rand, static, non-static, multichannel)
   pretrained_embed: ""
-  embed_dim: 128
-  num_filters: 128
+  embed_dim: 300
+  num_filters: 256
   filter_sizes:
+    - 2
     - 3
     - 4
     - 5
   dropout: 0.5
 
 train:
-  batch_size: 64
   learning_rate: 0.00001
+
   train_steps: 20000
   model_dir: 'logs/rt-polarity'
-  save_checkpoints_steps: 1000
+
+  save_checkpoints_steps: 100
+  loss_hook_n_iter: 100
   check_hook_n_iter: 100
   min_eval_frequency: 100
+
+  print_verbose: True
+  debug: False
