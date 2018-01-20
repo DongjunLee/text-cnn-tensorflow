@@ -13,6 +13,8 @@ This code implements [Convolutional Neural Networks for Sentence Classification]
 - TensorFlow 1.4
 - [hb-config](https://github.com/hb-research/hb-config) (Singleton Config)
 - tqdm
+- requests
+- [Slack Incoming Webhook URL](https://my.slack.com/services/new/incoming-webhook/)
 
 ## Project Structure
 
@@ -80,6 +82,9 @@ train:
   loss_hook_n_iter: 1000
   check_hook_n_iter: 1000
   min_eval_frequency: 1000
+  
+slack:
+  webhook_url: ""   # after training notify you using slack-webhook
 ```
 
 

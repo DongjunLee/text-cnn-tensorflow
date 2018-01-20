@@ -20,7 +20,7 @@ model:
 train:
   learning_rate: 0.001
 
-  train_steps: 10000
+  train_steps: 100
   model_dir: 'logs/rt-check_tiny'
 
   save_checkpoints_steps: 100
@@ -30,3 +30,6 @@ train:
 
   print_verbose: True
   debug: False
+
+slack:
+  webhook_url: ""
