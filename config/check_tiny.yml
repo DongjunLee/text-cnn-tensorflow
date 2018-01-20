@@ -6,6 +6,7 @@ data:
   PAD_ID: 0
 
 model:
+  batch_size: 3
   embed_type: 'rand'
   pretrained_embed: ""
   embed_dim: 32
@@ -17,10 +18,15 @@ model:
   dropout: 0.5
 
 train:
-  batch_size: 1
   learning_rate: 0.001
+
   train_steps: 10000
-  model_dir: 'logs/check_tiny'
-  save_checkpoints_steps: 1000
+  model_dir: 'logs/rt-check_tiny'
+
+  save_checkpoints_steps: 100
+  loss_hook_n_iter: 100
   check_hook_n_iter: 10
   min_eval_frequency: 10
+
+  print_verbose: True
+  debug: False

@@ -22,6 +22,7 @@ init Project by [hb-base](https://github.com/hb-research/hb-base)
     ├── config                  # Config files (.yml, .json) using with hb-config
     ├── data                    # dataset path
     ├── notebooks               # Prototyping with numpy or tf.interactivesession
+    ├── scripts                 # download or prepare dataset using shell scripts
     ├── text-cnn                # text-cnn architecture graphs (from input to logits)
         ├── __init__.py             # Graph logic
     ├── data_loader.py          # raw_date -> precossed_data -> generate_batch (using Dataset)
