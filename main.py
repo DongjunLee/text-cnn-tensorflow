@@ -8,14 +8,14 @@ import tensorflow as tf
 
 import data_loader
 import hook
-from model import TextCNN
+from model import Model
 
 
 def experiment_fn(run_config, params):
 
-    text_cnn = TextCNN()
+    model = Model()
     estimator = tf.estimator.Estimator(
-            model_fn=text_cnn.model_fn,
+            model_fn=model.model_fn,
             model_dir=Config.train.model_dir,
             params=params,
             config=run_config)
