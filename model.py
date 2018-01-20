@@ -20,6 +20,7 @@ class Model:
         self.mode = mode
         self.params = params
 
+        self.loss, self.train_op, self.metrics, self.predictions = None, None, None, None
         self._init_placeholder(features, labels)
         self.build_graph()
 
@@ -31,8 +32,8 @@ class Model:
             mode=mode,
             loss=self.loss,
             train_op=self.train_op,
-            eval_metric_ops=self._build_metric(),
-            predictions=self.predictions)
+            eval_metric_ops=self.metrics,
+            predictions={"prediction": self.predictions})
 
     def _init_placeholder(self, features, labels):
         self.input_data = features
@@ -45,10 +46,11 @@ class Model:
         graph = text_cnn.Graph(self.mode)
         output = graph.build(self.input_data)
 
+        self._build_prediction(output)
         if self.mode != tf.estimator.ModeKeys.PREDICT:
-            self._build_prediction(output)
             self._build_loss(output)
             self._build_optimizer()
+            self._build_metric()
 
     def _build_loss(self, output):
         self.loss = tf.losses.softmax_cross_entropy(
@@ -69,6 +71,6 @@ class Model:
             name="train_op")
 
     def _build_metric(self):
-        return {
+        self.metrics = {
             "accuracy": tf.metrics.accuracy(tf.argmax(self.targets, axis=1), self.predictions)
         }

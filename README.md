@@ -28,7 +28,8 @@ init Project by [hb-base](https://github.com/hb-research/hb-base)
     ├── data_loader.py          # raw_date -> precossed_data -> generate_batch (using Dataset)
     ├── hook.py                 # training or test hook feature (eg. print_variables)
     ├── main.py                 # define experiment_fn
-    └── model.py                # define EstimatorSpec      
+    ├── model.py                # define EstimatorSpec
+    └── predict.py              # test trained model       
 
 Reference : [hb-config](https://github.com/hb-research/hb-config), [Dataset](https://www.tensorflow.org/api_docs/python/tf/data/Dataset#from_generator), [experiments_fn](https://www.tensorflow.org/api_docs/python/tf/contrib/learn/Experiment), [EstimatorSpec](https://www.tensorflow.org/api_docs/python/tf/estimator/EstimatorSpec)
 
@@ -93,6 +94,24 @@ Then, prepare dataset and train it.
 ```
 sh prepare_kaggle_movie_reviews.sh
 python main.py --config kaggle_movie_review --mode train_and_evaluate
+```
+
+After training, you can try typing the sentences what you want using `predict.py`.
+
+```python python predict.py --config rt-polarity```
+
+Predict example
+
+```
+python predict.py --config rt-polarity
+Setting max_seq_length to Config : 62
+load vocab ...
+Typing anything :)
+
+> good
+1
+> bad
+0
 ```
 
 ### Experiments modes
