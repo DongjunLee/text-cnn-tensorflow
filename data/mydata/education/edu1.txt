@@ -1,0 +1,311 @@
+32 Free Online Courses and Certificates You can earn in 2019 (Updated)
+In this comprehensive guide we have compiled a list of the best free online courses and certificates that you can pursue at your leisure. In today’s world, receiving good quality education has become so much easier and quicker than it was ever before.
+
+Thanks to the evolution of world wide web many universities have shifted from their conventional way of teaching to online teaching with incredible success. Online education has become so common now that students have started attending their regular teaching classes from their PCs and laptops.
+Leveraging the technology of web video conferencing the effectiveness of class interaction and student collaboration has become nearly equal to doing it physically. Especially for students who are doing jobs and cannot find the time to go to their colleges regularly, this has become a very popular way of earning their degrees.
+
+List of Free Online Courses and Certificates
+We have taken one step further to share the courses and certifications that are completely free. There are so many paid courses available on the Internet on almost any topic that you can think of. But finding the ones that are free can be a hectic task. But that’s exactly why we’re here, right? To make sure that you get free online courses that are as good as the paid ones. We have divided the courses into categories according to different areas of study including:
+
+Information Technology
+Engineering
+Accounting / Finance
+Human Resources (HR)
+Medical Sciences
+Bonus Courses
+Below are brief descriptions on every course and details on how you can enroll and get started:
+
+INFORMATION TECHNOLOGY
+1. CS50 Introduction to Computer Science
+Prerequisites: None
+
+Free Certificate: No
+
+Course Creator: Harvard University
+
+This is an entry level course with no per-requisites and it will teach you the fundamentals of Computer Science with basic knowledge of programming. If you want to become a Software developer or Web developer, this course is a must for you. The course will cover topics including Algorithms, basic data structures and object oriented programming. It will also consist of some assignments and projects. Click Here to Enroll
+
+2. Developing Android Apps (New Android Fundamentals)
+Prerequisites: 1 year of Programming experience in any object oriented programming language
+
+Free Certificate: No
+
+Course Creator: Google
+
+This is an intermediate level course that teaches you the basic of android development and advanced to intermediate level programming in Java. In this step-by-step course you will be working with the instructor to develop a Cloud based android application. The course will also teach you the best practices of mobile development. The course involved video lectures along with interactive quizzes. 
+3. Online Python Course from MIT
+Prerequisites: None
+
+Free Certificate: No
+
+Course Creator: MIT
+
+For those who want to learn Python from scratch and earn a free certificate along the way, this brilliant course from MIT will fulfill your dream. The course is aimed to give you an introductory experience with Python to prepare you for further advanced courses. The course will teach you the basics of Python programming language, installation and configuration, basic programming functions, object oriented programming and file handling. Do drop a positive feedback for the instructor if you like the course. Click here to Enroll
+
+4. Web Development and Mobile Development Courses from BitDegree
+Prerequisites: None
+
+Free Certificate: Yes
+
+Course Creator: BitDegree
+
+BitDegree offers a wide range of IT related online courses that are suitable both for beginners and advanced coders. What’s exceptional about these courses is that you will get a free certificate of completion after finishing the course that will act as proof of knowledge and newly gained skills. Besides general video courses, you can also choose to enroll in gamified coding courses that interactively combines both theoretical and practical parts of learning. Click here to Enroll
+
+5. Microsoft Azure Virtual Bootcamp
+Prerequisites: None
+
+Free Certificate: Yes
+
+Course Creator: Catapult Systems
+
+Microsoft Azure platform has gained a lot of popularity recently in the world of cloud computing. Their premium partner Catapult systems has designed a free Bootcamp for those who are interested in learning Cloud technologies focusing on Microsoft Azure. The best thing about this course is that it will carry on for seven weeks and will provide 2 or 3 videos each week for you to watch at your ease. They will also provide a free certificate of completion at the end of the course. This however requires you to enter a promo code in their application form which is VirtualCloud.
+6. Online Marketing & Advertising courses from GenM
+Prerequisites: None
+
+Free Certificate: Yes
+
+Course Creator: GenM
+
+GenM provides hands-on marketing experience and free online courses to help students launch their careers. From ‘Intro to Marketing’ to more advanced lessons in ‘Content Marketing’, ‘Paid Advertising’ and more, the GenM’s free marketing courses are a great option for anyone wanting to launch a career in marketing. GenM’s free courses can be accessed via their website, or on their free app. Click here to Enroll
+
+7. Microsoft Office Training Center (Multiple Courses)
+Prerequisites: None
+
+Free Certificate: No
+
+Course Creator: Microsoft
+
+Whether your are an IT professional, an accountant, a doctor or a clerk, you will always need Microsoft office products (Word, Excel, Powerpoint) to manage and edit your data. For this purpose we decided to share this amazing opportunity to get familiar with all their products by watching detailed video lessons created by Microsoft itself! Yes, you can now become an MS Office guru for free and showoff your amazing skills to your colleagues and make them jealous. Click here to Enroll
+
+8. Windows Server Administration Fundamentals
+Prerequisites: None
+
+Free Certificate: No
+
+Course Creator: Microsoft Virtual Academy
+
+Microsoft is widely known for its Server management products all around the world. They also offer a number of server management related certifications for IT professionals. Microsoft Windows Server 2012 and 2016 are the most popular server operating systems in the world currently and almost ever enterprise uses their OS to manage their IT work spaces. If you want to make a career as a Server administrator then this free course from Microsoft Virtual Academy should get you started. Although you won’t receive  certificate at the end of the course but you will earn points that will enable you to recognize yourself in the MVA portal among other professionals. They also offer promotions to their most valuable learners. Click here to Enroll
+
+RELATED: 8 FREE Web Development Courses and Certifications
+9. Digital Marketing Certification by Google
+Prerequisites: None
+
+Free Certificate: Yes
+
+Course Creator: Google
+
+For all those who want to become expert at online marketing and skyrocket their online business then this course is a real game changer for you. Google is offering this free online marketing certification to all. Incredible right? It will not only enable you to learn digital marketing skills for your business but will also add an awesome badge to your CV if you’re looking for a similar job. Whether we deserve it or not we gotta take advantage of this opportunity. Click here to Enroll
+
+10. Bachelors in Computer Science (Online Degree)
+Prerequisites: None
+
+Free Certificate: Yes
+
+Course Creator: University of People
+
+Wait what? Tuition-Free online Bachelors Degree? Yes! it’s true. University of People (accredited by Distance Education Accrediting Commission) is offering an online Bachelor’s degree in Computer Sciences. Being accredited in the United States means the degree should be recognized in all countries. University of California Berkley even offers transferring the whole degree to their university for top performing students. How amazing is that. Just to make it clear, it is a tuition-free degree. There is a $60 admission fee and $100 per exam fee involved. So you will still need to invest in a little of your savings account to earn the degree. Click here to Enroll
+
+11. Cisco Certified Network Associate by Cybrary
+Prerequisites: None
+
+Free Certificate: Yes
+
+Course Creator: Cybrary
+
+We all know how tough Cisco networking certifications are and the exam fees can be quite heavy on your stash. But at the same time we all want to become Networking gurus and dream to be the architects of the whole Network infrastructure of our offices and enterprises. Well you’re in luck because Cybrary is offering a free Cisco CCNA training course with free certification. In this course you will be able to learn almost all topics covered in CCNA curriculum including configuring and troubleshooting LAN and WAN environments. Click here to Enroll
+
+12. Oracle Database and SQL Boot camp
+Prerequisites: None
+
+Free Certificate: Yes
+
+Course Creator: Oracle
+
+Want to learn how Oracle database and SQL works and want to become the master of Databases? This amazing free 12-week Boot camp created by Oracle should give you a great start. The course will teach you how to build databases from scratch. You will learn the proper ways of designing tables, data modeling, joins, aggregators, views, insert delete and update functions and much more. They will also grant you a free certificate of completion at the end of the course. Click here to Enroll
+
+ENGINEERING
+13. Robotics
+Prerequisites: Linear Algebra, Calculus, Basic knowledge of Computer Programming
+
+Free Certificate: Yes
+
+Course Creator: Columbia University
+
+This course is for all those engineers or to-be engineers who want to step their game up and develop expertise in robotics. Remember, this is an advanced level course and it requires you to have some background knowledge of Linear Algebra, Calculus and Basic programming skills. The course will teach you how to represent 2D and 3D spatial relationships, manipulate robotic arms, program mobile robots and develop future applications for robots. Click here to Enroll
+
+14. Introduction to Aeronautical Engineering
+Prerequisites: None
+
+Free Certificate: Yes
+
+Course Creator: Delft University of Technology
+
+If you’re looking to make your career as an Aeronautical engineer then this might be the best deal for you. Delft university of technology has created this amazing course for those who are willing to pursue aeronautical engineering degrees. This course will give you a detailed introduction to aerodynamics and will progress to more advanced details. You will also learn about how flight performance is measures. So fasten your seat belt and signup for this opportunity. Click here to Enroll
+
+15. Systems Engineering
+Prerequisites: None
+
+Free Certificate: No
+
+Course Creator: Alison
+
+Systems Engineering has always been one of the major fields in the engineering world. This course will teach you how to design and manage complex engineering projects throughout their life cycle. It is an introductory course so you don’t need to have any specific background knowledge. The two main skill that you will learn in this course are system modelling and diagramming. After the course completes you will be required to undertake an Assessment exam. If you score above 80% you will receive a free certificate. Click here to Enroll
+
+16. Interactive 3D Graphics
+Prerequisites: Basic programming skills
+
+Free Certificate: No
+
+Course Creator: AutoDesk
+
+This is probably the coolest skill that every engineer would love to learn: creating stunning interactive 3D graphics. AutoDesk already had it in their mind and that’s why they have developed this free course for all of you to get your hands into 3D graphics. This course will start with the basic principles of 3D computer graphics and work you through meshes, transforms, materials, cameras and animation. The course will go on for about 2 months if you’re on average pace. There will also be interactive quizzes and exams. Click here to Enroll
+
+17. Google SketchUp for 3D Modeling
+Prerequisites: None
+
+Free Certificate: yes
+
+Course Creator: Google
+
+If you are not familiar with Google SketchUp, it is a software developed by Google for 3D modelling. It is used by architects, mechanical and civil engineers and graphic designers to produce 3d models and animations. Google has created a free certification course for all who want to develop their skills in 3D modeling and animation. This is an introductory to expert level course that does not require you to have any background skills. The course will involve a final assessment and those who pass it will receive a free certificate from Google. Click here to Enroll
+
+ACCOUNTS / FINANCE
+18. ACCA-X  (Multiple Courses)
+Prerequisites: None
+
+Free Certificate: No
+
+Course Creator: ACCA, Edx and Epigeum
+
+ACCA-X is an online study program created by ACCA, edx and Epigeum to help students learn ACCA courses globally. They are offering 2 subjects for free in their program namely, Introduction to Finance and Management Accounting and Intermediate Financial and Management Accounting. Other advanced courses are offered in very affordable prices. Of course if you like the free 2 courses you can decide if you want to spend some money on further advanced courses or not. All to-be accountants should take advantage of this golden opportunity. Click here to Enroll
+
+19. Introduction to Financial Accounting
+Prerequisites: None
+
+Free Certificate: No
+
+Course Creator: University of Pennsylvania
+
+If you are new to the realm of Accounting and Finance and are looking for something to get started with then this course created by the University of Pennsylvania should give you a kick-start. However, there are two options to take this course: Either purchase the course and participate in the quizzes / exams and get a certificate on completion OR take the course for free by learning through video lectures and leaving without a certificate. Coursera offers the opportunity to enroll for free if you can’t afford the fee. Click here to Enroll
+
+20. Diploma in Accounting – Advanced Controls and Transactions
+Prerequisites: Basic Business Know how
+
+Free Certificate: Yes
+
+Course Creator: Global Text Project
+
+If you’re looking to specialize in Business and Accounting then this free diploma with free exam and certificate will get you rolling. In this course you will get in-depth knowledge about transactions, controls and processes that are used to record transactions in business. This will not only enable you to take the lead among your fellow accountants but will also be a valuable addition to your CV. Click here to Enroll
+
+21. QuickBooks Pro
+Prerequisites: None
+
+Free Certificate: No
+
+Course Creator: Simon Sez IT
+
+This might be a real eye-opener for all accountants and Book keepers out there. If you don’t already know, Quickbooks is one of a leading software used for accounting and book keeping. If you have good command on it then you might not be too far from getting your dream job. The problem is Quickbooks courses are training can be really expensive and those who don’t have a decent income will think twice before pursuing them. But don’t worry we’ve got it covered because we have found this free 2-hour course for you guys. Click here to Enroll
+
+22. Bachelors of Science in Business Administration (Online Degree)
+Prerequisites: None
+
+Free Certificate: Yes
+
+Course Creator: University of People
+
+This online degree is being offered by University of people (accredited by Distance Education Accrediting Commission) for students from all around the world, completely tuition-free. However, there is a $60 admission free and $100 exam fee (each course) involved. It is unsure whether the degree will be accepted in all countries but since it’s accredited with a government institution it should be accepted anywhere. University of California also recognizes this degree and allows outstanding students to transfer their credits. Click here to Enroll
+
+HUMAN RESOURCES (HR)
+23. Preparing to Manage Human Resources
+Prerequisites: None
+
+Free Certificate: No
+
+Course Creator: University of Minnesota
+
+University of Minnesota has created a free course for students who want to pursue their careers in the Human Resources. In the recent years HR has become a very important part of the corporate sector. Research shows that companies who focus on HR along with their other primary objectives have more satisfied employees and their retention periods are much higher compared with other companies. This course will teach you how to effectively manage your most important organizational assets i-e employees. Click here to Enroll
+
+24. Human Resources Course
+Prerequisites: None
+
+Free Certificate: Yes
+
+Course Creator: Open2Study
+
+In case you’re wondering yes, there is a course on Human Resources that can earn you a free certificate of achievement as well. Open2Study is an Australia based organization that offers free courses to students from all over the world. This particular HR course has gained a lot of popularity because it covers almost all aspects of HR management including staff recruitment, retention and performance management. The course will also involve quizzes and assessments and if you’re able to clear the final assessment you will get a free certificate of achievement. Cool right? Click here to Enroll
+
+25. Diploma in Human Resources
+Prerequisites: None
+
+Free Certificate: Yes
+
+Course Creator: Alison
+
+You can also pursue a free diploma in Human Resources to make your CV shine. Alison is offering this free online diploma in HR management that will allow you to study their curriculum, take quizzes and exams and earn a free certification. This diploma will teach you the essentials of HR management skills. You will also learn about different cultures and ethics in this course. If you want to be good at HR you might as well know how to deal with everyone, no matter what country or race they belong to. Click here to Enroll
+
+MEDICAL SCIENCES
+26. Introduction to Medical Coding
+Prerequisites: None
+
+Free Certificate: Yes
+
+Course Creator: 360Training
+
+Medical students feeling left out? Don’t anymore because this free online training is a real gem for all health care professionals. 360Training is offering a free course in Medical Coding. You will learn the application of coding systems used to code in-patient and out-patient medical services. Click here to Enroll
+
+27. Online Medical Terminology Course
+Prerequisites: None
+
+Free Certificate: No
+
+Course Creator: Des Moines University
+
+For all to-be doctors and health care professionals this course is an amazing opportunity for you to get familiar with all medical terminology that you will come across your entire careers. That’s right, you can impress all your fellow colleagues and students while you’re starting your medical studies. This course has been designed by Des Moines University and is completely free to take. However, if your want a certificate of participation at the end of the course then you will have to invest $99 to get it. Click here to Enroll
+
+28. CPR / AED Certification Course
+Prerequisites: Basic Healthcare know how
+
+Free Certificate: Yes
+
+Course Creator: National CPR Foundation
+
+This might be one of the most useful courses you will do in your entire careers because it prepares for the worst of the situations that you can encounter. This certification course is free to take and in this course you will learn how to perform CPR the right way on children and adults both. You will also learn about Fibrillation and how to use an Automated External Defibrillator (AED). The good news is, after giving the exam and completing this course you will receive a free digital certificate and a free PVC / Vinyl wallet card in your mail. Click here to Enroll
+
+29. Fundamentals of Clinical Trials
+Prerequisites: Background in bio-statistics and epidemiology
+
+Free Certificate: Yes
+
+Course Creator: Harvard University
+
+You all must have heard about clinical trials right? How medicines are first gone through different phases of clinical trials before they can get approved by FDA. Well this course will teach you how clinical trials actually take place. You will learn about the scientific, statistical and ethical aspects of clinical trials research. This course is created by Harvard university so there is no reason why you shouldn’t be taking it. Click here to Enroll
+
+BONUS COURSES
+30. The Architectural Imagination
+Prerequisites: None
+
+Free Certificate: Yes
+
+Course Creator: Harvard University
+
+If you’re new to the field of Architecture you might want to take this free course created by Harvard University. This course will teach you the fundamentals of architecture by diving deep into the important buildings and designs from our history. This course doesn’t require you to have any kind of knowledge about architecture. The only things required are passion and curiosity. Click here to Enroll
+
+31. Inside IELTS: Preparing for the Test with Experts
+Prerequisites: None
+
+Free Certificate: No
+
+Course Creator: University of Cambridge
+
+Always dreamed about doing IELTS but have no idea where to start? This free IELTS preparation course will get you off the mark. The best part is, you will be learning from the best instructors of the Cambridge University for a duration of 5 weeks. This is an incredible offer for students who want to travel to different countries for study or work. Heck! You can just take this course to improve your English. You can also get a certificate of completion or participation for a little price. Click here to Enroll
+
+32. Law for Non-Lawyers
+Prerequisites: None
+
+Free Certificate: No
+
+Course Creator: MONASH University
+
+We’re not lawyers but we all want to know how the law works right. Whether we like it or not we want to know all the rules and regulations to make sure we don’t step on the wrong side of the road right? Well this free course is meant for all of us. This is a 4 week long course which will teach you how exactly law works, the legal principles, rights and responsibilities. Click here to Enroll
+
+So here’s all the awesome free online courses and certifications we could find for you guys. Let us know if you know about other free opportunities so we can include it in the list. For now just enroll into as may courses as you want and become gurus in your fields of study. Thank us by sharing the knowledge further.

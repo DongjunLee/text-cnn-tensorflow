@@ -1,0 +1,73 @@
+3 Things To Do When You Don’t Have a Computer Science Degree
+The answer is not necessarily “go get one”.
+So, you want to get a job in a computer-related field — perhaps as a software engineer. There’s just one problem: you don’t have a degree. Or, you do have a degree, but it’s not in computer science.
+
+Two things come to your mind:
+
+Get a computer science degree.
+Find another thing to be passionate about.
+While a computer science degree can be valuable, it doesn’t have to (and probably won’t be) the deciding factor in whether you end up with a job that you love.
+
+If you are looking for a software engineering job, but you don’t have a degree in computer science, you should:
+Find other ways to demonstrate your expertise.
+Network, network, network.
+Practice for white board interviews (or other types of technical interviews) as if your life depended on it.
+Find other ways to demonstrate your expertise.
+It’s 2019. There are a lot of ways to show that you know what you say you know.
+
+Complete a relevant program on freeCodeCamp. They offer certifications in the following disciplines: Responsive Web Design (300 hours); Javascript Algorithms And Data Structures Certification (300 hours); Front End Libraries Certification (300 hours); Data Visualization Certification (300 hours); APIs And Microservices Certification (300 hours); and Information Security And Quality Assurance Certification (300 hours).
+Take courses on SoloLearn (they come with certificates, too).
+If the curriculum at a coding bootcamp aligns with your goals, and if you can pull it off financially, consider it. Understand, though, that while you might learn to code, you won’t get a comprehensive education in computer science.
+Develop a well-rounded portfolio.
+Contribute to open-source projects on GitHub.
+Develop an online presence. Writing is one way to do this; your published articles can prove that you know what you say you know.
+Network, network, network.
+LinkedIn is the most underrated platform I’ve ever used. It’s so easy to build a loyal following that it’s almost unforgivable if you don’t give it a shot.
+
+Participate in challenges (e.g. 30 JS apps; #100daysofcode) and show off your projects.
+Connect with recruiters.
+Connect with people who are doing exactly what you wish to be doing.
+Get feedback on your resume and portfolio.
+Treat your profile like a portfolio. Keep it updated. Add all relevant coursework and certifications. Add all relevant projects.
+Go to meetups and hackathons.
+
+You’ll meet people who can guide you in the right direction.
+You’ll develop portfolio pieces that you can talk about at interviews.
+Write.
+
+Writing is another underrated form of networking. When you publish something, your work is out there for recruiters and industry leaders to see.
+You’ll connect with others in your industry.
+Talk with recruiters, even if they don’t have a position for you right now.
+
+Recruiters are able to get your resume and portfolio into the right hands, especially if a company’s system is filtering out resumes from people without degrees.
+They can and will call you later on if a job matching your qualifications pops up.
+They can and will advocate on behalf of strong candidates.
+Recruiters can give you feedback on your resume, your portfolio, and your other qualifications before they share it with hiring managers.
+Practice for interviews as if your life depended on it.
+If white board interviews are in your future, get on LeetCode and start practicing. If another form of technical interview is in your future, find out exactly what you’ll be asked to do, and prepare. Really, truly prepare. Not the night before the interview. Not for an hour or two while you’re at Starbucks. Be over-prepared, if there is such a thing.
+
+If you and algorithms aren’t best friends, study some more. If the word algorithm intimidates you, remind yourself that you probably know more about algorithmic thinking than you realize. An algorithm is just a set of steps for doing something. You just need to be able to think of a set of steps to do a lot of different things. Break it down.
+
+
+Photo by Christopher Gower on Unsplash
+I understand that getting an interview might be the hardest part of this entire process. You might be reading this and thinking, “I’m not even getting called for interviews!” or “If only I got called for an interview, I could prove myself!” If that’s the case, go back to the first two steps and ask yourself if you’ve done them faithfully.
+
+Many companies don’t require computer science degrees nowadays (Google and Apple don’t, for example). Some do, but are willing to make exceptions for strong candidates. On the other hand, the companies that are extremely picky about your educational background (to the point that they don’t even consider your skills) might not be worth your time.
+
+Case in point: I was once contacted by a recruiter who told me that I was the perfect candidate for a position as a Rails developer — even though I’m not a Rails developer — because I went to Yale (not for computer science). This particular company only wanted candidates with Ivy League degrees, and they would allegedly pay whatever I asked for if I would relocate and learn to be something I’m not. Oh, look: a red flag. 🚩
+
+Unless you’re fresh out of high school, or unless you genuinely want to go back to college, don’t worry about the degree. If you have the skills and the ability to demonstrate them, and if you actively network, you just might be fine without that piece of paper.
+You can’t become an electrical engineer without a degree, or a mechanical or civil engineer, or a chemical engineer, or a physicist, or a medical doctor, or a lawyer. Why would it be possible to become a software engineer?
+
+Sure, maybe 50–60 years ago, when the very idea of automatic computers was new and there wasn’t any way to get such a degree, but we’ve come a long way since then and devoted a large number of person-millennia to the subject.
+
+Some states have laws that limit your ability to call yourself various kinds of engineer, with education requirements, competency tests, etc. I don’t like this idea, but I can see the need for it for software engineering as software takes control of so much of our lives — our electric supply, water and sewer, airplanes, factories, cars, door locks, etc. etc. I want the people who write my hospital’s medical records system to know a bunch of things you can’t pick up in the streets, like security, privacy, reliability, etc.
+
+Sure, there are going to be people who got degrees in some other subject and now want to switch but can’t go back to college. They can always become coders, if they can afford the low pay, and maybe learn enough through experience in a few decades to do software engineering. That may be what you’re suggesting in the article above.
+Not necessarily. I’m not talking about learning through experience as much as I’m talking about finding a way to learn everything that was missed by not having completed a CS program.
+
+You do bring up an interesting point about the lack of standardization re: engineering titles. That could be an entire article in itself.
+
+Education is paramount, but the degree itself is not what makes an engineer highly qualified.
+
+Someone could graduate with a B- average in a low-quality CS program and end up being a really skilled engineer. An MIT grad could be an average engineer. Someone who didn’t study CS could be the senior engineer on the team. If you go into Google or another big tech company and observe a high-performing engineering team, I guarantee that you won’t be able to guess which ones have which degrees.

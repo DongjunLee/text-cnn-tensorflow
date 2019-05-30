@@ -3,7 +3,7 @@ data:
   base_path: 'data/'
   raw_data_path: 'kaggle_movie_reviews/'
   processed_path: 'kaggle_processed_data'
-  testset_size: 25000
+  testset_size: 900
   num_classes: 5
   PAD_ID: 0
 
@@ -23,13 +23,13 @@ model:
 train:
   learning_rate: 0.00005
 
-  train_steps: 100000
+  train_steps: 10000
   model_dir: 'logs/kaggle_movie_review'
 
-  save_checkpoints_steps: 1000
-  loss_hook_n_iter: 1000
-  check_hook_n_iter: 1000
-  min_eval_frequency: 1000
+  save_checkpoints_steps: 100
+  loss_hook_n_iter: 100
+  check_hook_n_iter: 100
+  min_eval_frequency: 100
 
   print_verbose: True
   debug: False

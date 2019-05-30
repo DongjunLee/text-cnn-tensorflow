@@ -34,7 +34,6 @@ def clean_str(string):
     string = re.sub(r"\s{2,}", " ", string)
     return string.strip().lower()
 
-
 def load_data_and_labels(positive_data_file, negative_data_file):
     """
     Loads MR polarity data from files, splits the data into words and generates labels.
@@ -54,7 +53,6 @@ def load_data_and_labels(positive_data_file, negative_data_file):
     y = positive_labels + negative_labels
     return x_text, y
 
-
 def prepare_raw_data():
     print('Preparing raw data into train set and test set ...')
     raw_data_path = os.path.join(Config.data.base_path, Config.data.raw_data_path)
@@ -63,25 +61,20 @@ def prepare_raw_data():
     if data_type == "kaggle_movie_review":
         train_path = os.path.join(raw_data_path, 'train.tsv')
         train_reader = csv.reader(open(train_path), delimiter="\t")
-
         prepare_dataset(dataset=list(train_reader))
 
-    elif data_type == "rt-polarity":
-        pos_path = os.path.join(Config.data.base_path, Config.data.raw_data_path, "rt-polarity.pos")
-        neg_path = os.path.join(Config.data.base_path, Config.data.raw_data_path, "rt-polarity.neg")
-        x_text, y = load_data_and_labels(pos_path, neg_path)
-
-        prepare_dataset(x_text=x_text, y=y)
-
+    
 
 def prepare_dataset(dataset=None, x_text=None, y=None):
     make_dir(os.path.join(Config.data.base_path, Config.data.processed_path))
+
+    print("Path to store datasets = ",os.path.join(Config.data.base_path, Config.data.processed_path))
 
     filenames = ['train_X', 'train_y', 'test_X', 'test_y']
     files = []
     for filename in filenames:
         files.append(open(os.path.join(Config.data.base_path, Config.data.processed_path, filename), 'wb'))
-
+    print("files = ",files)
     if dataset is not None:
 
         print("Total data length : ", len(dataset))
@@ -93,6 +86,7 @@ def prepare_dataset(dataset=None, x_text=None, y=None):
 
             data = dataset[i]
             X, y = data[2], data[3]
+
 
             if i in test_ids:
                 files[2].write((X + "\n").encode('utf-8'))
@@ -117,14 +111,12 @@ def prepare_dataset(dataset=None, x_text=None, y=None):
     for file in files:
         file.close()
 
-
 def make_dir(path):
     """ Create a directory if there isn't one already. """
     try:
         os.mkdir(path)
     except OSError:
         pass
-
 
 def basic_tokenizer(line, normalize_digits=True):
     """ A basic tokenizer to tokenize text into tokens.
@@ -145,7 +137,6 @@ def basic_tokenizer(line, normalize_digits=True):
             words.append(token)
     return words
 
-
 def build_vocab(train_fname, test_fname, normalize_digits=True):
     vocab = {}
     def count_vocab(fname):
@@ -160,6 +151,9 @@ def build_vocab(train_fname, test_fname, normalize_digits=True):
     train_path = os.path.join(Config.data.base_path, Config.data.processed_path, train_fname)
     test_path = os.path.join(Config.data.base_path, Config.data.processed_path, test_fname)
 
+    print("train path = ",train_path)
+    print("Test path = ", test_path)
+
     count_vocab(train_path)
     count_vocab(test_path)
 
@@ -173,17 +167,14 @@ def build_vocab(train_fname, test_fname, normalize_digits=True):
             f.write((word + '\n').encode('utf-8'))
             index += 1
 
-
 def load_vocab(vocab_fname):
     print("load vocab ...")
     with open(os.path.join(Config.data.base_path, Config.data.processed_path, vocab_fname), 'rb') as f:
         words = f.read().decode('utf-8').splitlines()
     return {words[i]: i for i in range(len(words))}
 
-
 def sentence2id(vocab, line):
     return [vocab.get(token, vocab['<pad>']) for token in basic_tokenizer(line)]
-
 
 def token2id(data):
     """ Convert all the tokens in the data into their corresponding
@@ -204,7 +195,6 @@ def token2id(data):
 
         out_file.write(b' '.join(str(id_).encode('utf-8') for id_ in ids) + b'\n')
 
-
 def process_data():
     print('Preparing data to be model-ready ...')
 
@@ -212,7 +202,6 @@ def process_data():
 
     token2id('train_X')
     token2id('test_X')
-
 
 def make_train_and_test_set(shuffle=True):
     print("make Training data and Test data Start....")
@@ -240,7 +229,6 @@ def make_train_and_test_set(shuffle=True):
         return ((train_X, train_y),
                 (test_X, test_y))
 
-
 def load_data(X_fname, y_fname):
     X_input_data = open(os.path.join(Config.data.base_path, Config.data.processed_path, X_fname), 'r')
     y_input_data = open(os.path.join(Config.data.base_path, Config.data.processed_path, y_fname), 'r')
@@ -263,10 +251,8 @@ def load_data(X_fname, y_fname):
     print(f"load data from {X_fname}, {y_fname}...")
     return np.array(X_data, dtype=np.int32), np.array(y_data, dtype=np.int32)
 
-
 def _pad_input(input_, size):
     return input_ + [0] * (size - len(input_))
-
 
 def set_max_seq_length(dataset_fnames):
 
@@ -284,7 +270,6 @@ def set_max_seq_length(dataset_fnames):
 
     Config.data.max_seq_length = max_seq_length
     print(f"Setting max_seq_length to Config : {max_seq_length}")
-
 
 def make_batch(data, buffer_size=10000, batch_size=64, scope="train"):
 
